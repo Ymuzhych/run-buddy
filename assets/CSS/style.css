@@ -5,6 +5,12 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center; 
 }
 header h1 {
     font-weight: bold;
@@ -12,6 +18,8 @@ header h1 {
     color: #fce138;
     margin: 0;
     display: inline;
+    /* add alongside your existing declarations */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 header a {
     text-decoration: none;
@@ -28,6 +36,7 @@ header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 *{
     margin: 0;
@@ -64,6 +73,9 @@ section {
     background-position: center;
     position: relative;
 }
+.hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 .hero-form {
     border: solid 3px #024e76;
     background-color: #fce138;
@@ -72,7 +84,9 @@ section {
     color: #024e76;
     position: absolute;
     bottom: 120px;
-    right: 140px;   
+    right: 140px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;   
 }
 .hero-form h3 {
     font-size: 24px;
@@ -89,6 +103,7 @@ section {
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 .hero-form label {
     margin: 0 5px;
@@ -100,6 +115,7 @@ section {
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
 }
 /* Hero Style End */
 .intro {
@@ -226,5 +242,11 @@ section {
     background-color: black;
     font-size: 20px;
     color: red;
+}
+.contact-form input, .contact-form textarea {
+    border-radius: 10px;
+}
+.contact-form button {
+    border-radius: 10px;
 }
 /*REACH OUT STYLES END */
